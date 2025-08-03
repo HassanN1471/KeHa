@@ -31,6 +31,21 @@ To see all available targets to run for a project, run:
 npx nx show project frontend
 ```
 
+Install requiements file for backend
+
+```sh
+cd apps/backend
+python -m venv venv
+.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+```
+
+Run Backend
+
+```sh
+fastapi dev main.py
+```
+
 These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
 
 [More about running tasks in the docs &raquo;](https://nx.dev/features/run-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)

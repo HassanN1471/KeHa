@@ -1,4 +1,5 @@
 import styles from './page.module.scss';
+import Button from '@mui/material/Button';
 
 export default function Index() {
   /*
@@ -11,6 +12,9 @@ export default function Index() {
       <div className="wrapper">
         <div className="container">
           <div id="welcome">
+          <Button variant="contained" color="primary">
+            Click me
+          </Button>
             <h1>
               <span> Hello there, </span>
               Welcome @ke-ha/frontend 👋
